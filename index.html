@@ -1,23 +1,22 @@
 <html>
     <head>
-         <script type="text/javascript"
-                 src="password.js">
-         </script>
-         <title>
-             Password Validation
-         </title>
+        <script src="js/password.js"> </script>
+        <link rel="stylesheet" href="/css/styles.css"/>
+        <title>
+            Password Validation
+        </title>
     </head>
     <body>
-        <p hidden class="help">
-
+        <p class="help" id="helpMatch">
         </p>
         <p>
-            Password: <input id="pass" type="text" placeholder="Enter Password" value=""/>
+            Password: <input id="pass" type="text" placeholder="Enter Password" value="" />
         </p>
         <p>
             Verify Password: <input id="passValidate" type="text" placeholder="Re-Enter Password" value=""/>
         </p> 
-            <input id="check" type="submit" value="Submit Password" onClick=checkPassword() />
-        </form>
+            <button id="check" value="Submit Password" onclick=checkPassword() >
+            Submit Password
+            </button>        
     </body>
 </html>
