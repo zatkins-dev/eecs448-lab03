@@ -2,7 +2,7 @@ var currentImg = 1;
 var nImages = 5;
 
 function setImgString() {
-    document.getElementById("img").src= `img/pic${currentImg}.jpeg`;
+    document.getElementById("img").src   = `img/pic${currentImg}.jpeg`;
 }
 
 function nextSlide() {
