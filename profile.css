@@ -1,5 +1,6 @@
 #profilePicture {
     background-image: url(img/chancellor.jpg);
+    float: left;
     width: 403px;
     height: 543px;
 }
@@ -7,4 +8,3 @@
 #profilePicture:hover {
     background-image: url(img/sith.jpg);
 }
-
