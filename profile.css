@@ -1,8 +1,11 @@
 #profilePicture {
     background-image: url(img/chancellor.jpg);
     float: left;
-    width: 403px;
-    height: 543px;
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 1em;
 }
 
 #profilePicture:hover {
