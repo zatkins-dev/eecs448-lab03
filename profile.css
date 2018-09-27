@@ -8,3 +8,7 @@
 #profilePicture:hover {
     background-image: url(img/sith.jpg);
 }
+
+h2 {
+    color: #996666;
+}
