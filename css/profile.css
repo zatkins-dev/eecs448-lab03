@@ -1,0 +1,10 @@
+#profilePicture {
+    background-image: url(img/chancellor.jpg);
+    width: 403px;
+    height: 543px;
+}
+
+#profilePicture:hover {
+    background-image: url(img/sith.jpg);
+}
+
