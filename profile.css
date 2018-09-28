@@ -19,11 +19,16 @@ h2 {
 }
 
 div.content {
-    width: 1280px;
-    margin: 50px 180px 50px 180px;
-    -webkit-box-sizing: border-box !important;
-    -moz-box-sizing: border-box !important;
-    box-sizing: border-box !important
+    width: 1000px;
+    margin: 50px 300px;
+    box-sizing: border-box !important;
+    clear:both;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 div.titlebox {
