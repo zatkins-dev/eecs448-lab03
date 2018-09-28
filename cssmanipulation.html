@@ -1,10 +1,20 @@
 <html>
     <head>
+        <script src="js/cssmanipulation.js"> </script>
         <link rel="stylesheet" href="../../style.css"/>
         <link rel="stylesheet" href="profile.css"/>
         <title>
             JavaScript CSS Manipulation
         </title>
+        <style>
+        #b1 {
+            font-size:20px;
+            border: 1pt groove rgb(53, 53, 53);
+        } 
+        * {
+            background-color: inherit;
+        }
+        </style>
     </head>
     <header>
         <nav>
@@ -17,6 +27,45 @@
             <h1>CSS Manipulation</h1>
     </div>
     <body>
-        
+        <div class="content" id="dummyText">
+            <h2>Dummy Text</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. </p>
+                <ul>
+                <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+                <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+                <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+                </ul>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>       
+        </div>
+        <div class="content">
+            <form id="form">
+                <h2>CSS Controls</h2>
+                <h3>Border</h3>
+                <div id="borderColors">
+                    <label for="redBor">Red (0-255)</label>
+                    <input type="number" id="redBor" min="0" max="255" step="1" value="0">
+                    <label for="greenBor">Green (0-255) </label>
+                    <input type="number" id="greenBor" min="0" max="255" step="1" value="0">
+                    <label for="blueBor">Blue (0-255)</label>
+                    <input type="number" id="blueBor" min="0" max="255" step="1" value="0">
+                </div>
+                <br>
+                <div id="borderWidth">
+                    <label for="widthBor">Width (px)</label>
+                    <input type="number" id="widthBor" min="0" value="1">
+                </div>
+                <h3>Background Color</h3>
+                <div id="backColors">
+                    <label for="redBack">Red (0-255)</label>
+                    <input type="number" id="redBack" min="0" max="255" step="1" value="0">
+                    <label for="greenBack">Green (0-255)</label>
+                    <input type="number" id="greenBack" min="0" max="255" step="1" value="0">
+                    <label for="blueBack">Blue (0-255)</label>
+                    <input type="number" id="blueBack" min="0" max="255" step="1" value="0">
+                </div>
+                <br>
+                <input id="b1" type="button" value="Apply Settings" onclick=updateFormat()>
+            </form>
+        </div>
     </body>
 </html>
