@@ -1,11 +1,13 @@
 #profilePicture {
     background-image: url(img/chancellor.jpg);
     float: left;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 350px;
+    background-clip: content-box;
+    background-position-x: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    padding: 1em;
+    margin-right: 10pt;
 }
 
 #profilePicture:hover {
@@ -14,4 +16,23 @@
 
 h2 {
     color: #996666;
+}
+
+div.content {
+    width: 1280px;
+    margin: 50px 180px 50px 180px;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important
+}
+
+div.titlebox {
+    border: 3px groove #663333;
+    padding-left: 10pt;
+    background-color: #FFE1DC;
+    vertical-align: middle;
+}
+
+.titlebox h1 {
+    background-color: inherit;
 }
