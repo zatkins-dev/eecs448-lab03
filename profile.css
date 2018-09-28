@@ -20,7 +20,7 @@ h2 {
 
 div.content {
     width: 1000px;
-    margin: 50px 300px;
+    margin: 50 180 50 auto;
     box-sizing: border-box !important;
     clear:both;
 }
