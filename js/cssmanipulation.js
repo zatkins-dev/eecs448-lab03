@@ -9,8 +9,6 @@ function updateFormat() {
      
     
     var text = document.getElementById("dummyText");
-    console.log(`${borWidth} solid rgb(${borColors})`);
     text.style.border = `${borWidth}pt solid rgb(${borColors})`;
-    console.log(backColors);
     text.style.backgroundColor = `rgb(${backColors})`;
 }
